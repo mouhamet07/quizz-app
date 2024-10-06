@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+PE:wght@100..400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(54, 55, 54, 0.282);
+}
+h4{
+    color: white;
+    font-family: "Playwrite PE", cursive;
+    text-align: center;
+    margin: 3%;
+}
+
+.question-container{
+    margin: auto;
+    width: 50%;
+    padding: 20px; /* Ajout d'un padding correct */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: rgba(42, 128, 165, 0.609);
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.answers{
+    padding: 3%;
+    padding-left: 15%;
+}
+p{
+    padding-left: 15%;
+}
+
+.question-container > button {
+    width: 15%;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: #FF6B6B;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    transition: background-color 0.3s ease;
+    margin-left: 75%;
+}
+
+@media (max-width: 768px) {
+    .question-container > button {
+        font-size: 7px; /* Taille de police plus petite */
+        padding: 3px; /* Réduction du padding pour les petits écrans */
+        width: 40%; /* Ajustement de la largeur pour petits écrans */
+        margin-bottom: 2%;
+        margin-left: 0; /* Centrer le bouton sur petits écrans */
+    }
+    .question-container {
+        width: 80%;
+        height: auto; /* Ajustement pour éviter des tailles fixes */
+    }
+}
+.question-container > button:hover {
+    background-color: #FF4C4C; 
+}
+.result {
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-top: 10%;
+    padding-right: 20%;
+}
+.progress{
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
